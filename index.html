@@ -654,10 +654,10 @@ footer a:hover{text-decoration:underline}
 </div>
 <div class="est-out">
 <div class="eo-label" id="eo-label">已选  4 个采购商群体</div>
-<div class="eo-num" id="eo-num">约 <em>67200 万元</em> / 年</div>
+<div class="eo-num" id="eo-num">约 <em>67,200 元</em> / 年</div>
 <div class="eo-sub" id="eo-sub">参考组合：南美 ＋ 前苏联 ＋ 中东，与官网参考组合一致。</div>
 </div>
-<p class="enote">估算口径：参考组合（4 个群体）约 67200 万元/年；每多选一个群体加 16,800 元。最终覆盖国家与费用以销售经理建议和合同为准。</p>
+<p class="enote">估算口径：参考组合（4 个群体）约 67,200 元/年；每多选一个群体加 16,800 元。最终覆盖国家与费用以销售经理建议和合同为准。</p>
 </div>
 </div>
 </div>
@@ -799,12 +799,12 @@ footer a:hover{text-decoration:underline}
       eoNum.innerHTML = '请选择 <em>市场</em>';
       eoSub.textContent = '至少选择 3 个你想进入的采购商群体。';
     } else if(n <= 4){
-      eoNum.innerHTML = '约 <em>67200 万元</em> / 年';
-      eoSub.textContent = n === 4 ? '参考组合：南美 ＋ 前苏联 ＋ 中东，与官网参考组合一致。' : '在参考组合（4 个群体）以内，按约 67200 万元/年估算。';
+      eoNum.innerHTML = '约 <em>67,200 元</em> / 年';
+      eoSub.textContent = n === 4 ? '参考组合：南美 ＋ 前苏联 ＋ 中东，与官网参考组合一致。' : '在参考组合（4 个群体）以内，按约 67,200 元/年估算。';
     } else {
-      var lo = 67200 + (n - 4) * 16800 ';
-      eoNum.innerHTML = '约 <em>' + fmt(lo) + '–' + fmt(hi) + ' 元</em> / 年';
-      eoSub.textContent = '参考组合 67200 万元 ＋ 新增 ' + (n - 4) + ' 个群体 × 16,800 元。';
+      var lo = 67200 + (n - 4) * 16800;
+      eoNum.innerHTML = '约 <em>' + fmt(lo) + ' 元</em> / 年';
+      eoSub.textContent = '参考组合 67,200 元 ＋ 新增 ' + (n - 4) + ' 个群体 × 16,800 元。';
     }
   }
   chips.forEach(function(c){
